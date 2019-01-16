@@ -18,12 +18,12 @@
 	* @goal : append <script> tag in the page.
 	*
 	* @argument url : the link of the js file
-	* @argument footer : append <script> tag at end of the <body> or <head>
+	* @argument in_body : append <script> tag at end of the <body> or <head>
 	* @argument callback
 	*
 	* @return appendChild() result
 	**/
-	window.appendscript(url,footer,callback)
+	window.appendscript(url,in_body,callback)
 	{
 		var script = document.createElement("script");
 		script.src = url;
@@ -32,7 +32,7 @@
 			script.onreadystatechange = callback;
 			script.onload = callback;
 		}
-		if(footer && footer === true)
+		if(in_body && in_body === true)
 		{
 			// Add to the end of the `body` section
 			return document.body.appendChild(script);
