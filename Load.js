@@ -11,4 +11,9 @@
 ;(function(window,document)
 {
 	"use strict";
+	window.loadjs(url,footer)
+	{
+		var script = document.createElement("script");
+		script.src = url;
+	}
 }(window,document));
