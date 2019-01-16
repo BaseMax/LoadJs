@@ -11,9 +11,14 @@
 ;(function(window,document)
 {
 	"use strict";
-	window.loadjs(url,footer)
+	window.loadjs(url,footer,callback)
 	{
 		var script = document.createElement("script");
 		script.src = url;
+		if(callback)
+		{
+			script.onreadystatechange = callback;
+			script.onload = callback;
+		}
 	}
 }(window,document));
