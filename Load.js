@@ -11,7 +11,6 @@
 ;(function(window,document)
 {
 	"use strict";
-
 	/**
 	* @function appendscript
 	*
