@@ -11,7 +11,19 @@
 ;(function(window,document)
 {
 	"use strict";
-	window.loadjs(url,footer,callback)
+
+	/**
+	* @function appendscript
+	*
+	* @goal : append <script> tag in the page.
+	*
+	* @argument url : the link of the js file
+	* @argument footer : append <script> tag at end of the <body> or <head>
+	* @argument callback
+	*
+	* @return appendChild() result
+	**/
+	window.appendscript(url,footer,callback)
 	{
 		var script = document.createElement("script");
 		script.src = url;
