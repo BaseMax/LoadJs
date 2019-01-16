@@ -20,5 +20,15 @@
 			script.onreadystatechange = callback;
 			script.onload = callback;
 		}
+		if(footer)
+		{
+			// Add to the end of the `body` section
+			document.body.appendChild(script);
+		}
+		else
+		{
+			// Add to the end of the `head` section
+			document.head.appendChild(script);
+		}
 	}
 }(window,document));
