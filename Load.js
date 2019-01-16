@@ -16,9 +16,9 @@
 	*
 	* @goal : append <script> tag in the page.
 	*
-	* @argument url : the link of the js file
-	* @argument in_body : append <script> tag at end of the <body> or <head>
-	* @argument callback
+	* @argument url      [Optional] : the link of the js file
+	* @argument in_body  [Optional] : append <script> tag at end of the <body> or <head>
+	* @argument callback [Optional]
 	*
 	* @return appendChild() result
 	**/
