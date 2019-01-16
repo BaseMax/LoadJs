@@ -8,3 +8,7 @@
 * @Repository : https://github.com/BaseMax/LoadJs
 *
 **/
+;(function(window,document)
+{
+	"use strict";
+}(window,document));
